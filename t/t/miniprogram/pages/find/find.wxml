@@ -1,0 +1,22 @@
+<!--pages/find/find.wxml-->
+
+<swiper 
+  autoplay="true"
+  interval="2000"
+  circular="true"
+  indicator-dots="true"
+  duration="100"
+>
+  <swiper-item wx:for="{{scrArr}}">
+    <image src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+
+<map name="map1"
+  longitude="116.132397"
+  latitude="24.336017"
+  scale="15"
+>
+
+</map>
+

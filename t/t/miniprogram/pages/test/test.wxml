@@ -1,0 +1,17 @@
+<!--pages/test/test.wxml-->
+<text>{{title}}</text>
+
+<template name="tmp">
+  <view>
+    <image src="{{src}}"></image>
+    <text>{{text}}</text>
+  </view>
+</template>
+
+<template is="tmp" wx:if="{{flag}}" wx:for="arr" data="{{...arr[index]}}"></template>
+
+<!-- <view wx:if="{{flag}}">
+  123
+</view> -->
+
+
